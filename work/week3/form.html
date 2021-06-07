@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>입력양식 테스트 </h1>
+
+
+  <form action="results.html" method="GET">
+
+    <fieldset>
+      <legend>Login</legend>
+      <div>
+        <label for="username">Username</label> <br>
+        <input type="text" name="username" id="username" required size="40">
+      </div>
+      <div>
+        <label for="password">Password</label> <br>
+        <input type="password" name="password" id="password" required size="40">
+      </div>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Personal information</legend>
+      <div>
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" size="40">
+      </div>
+
+      <div>
+        <label for="age ">age</label> <br>
+        <input type="number" name="age" id="age" min="0" max="150" step="1" size="40">
+      </div>
+
+      <div>
+        <label for="date">Birthday</label> <br>
+        <input type="date" name="Birthday" id="date" size="40">
+      </div>
+
+      <div>
+        <label for="phone">phone</label> <br>
+        <input type="tel" name="phone" id="phone" size="40" placeholder="Write your phone number.">
+      </div>
+
+      <div>
+        <label for="homepage">Homepage</label> <br>
+        <input type="url" name="homepage" id="homepage" value="https://www.naver.com" size="40">
+      </div>
+
+      <div>
+        <label for="bio">Resume</label> <br>
+        <textarea name="bio" id="bio" cols="40" rows="10" placeholder="write your resume"></textarea>
+      </div>
+
+    </fieldset>
+    <fieldset>
+      <legend>your Choice</legend>
+      <div><br>
+        <label for="">favourite fruit?</label> <br>
+
+        <input type="checkbox" name="banana" id="banana">
+        <label for="banana">banana</label>
+        <input type="checkbox" name="apple" id="apple">
+        <label for="apple">apple</label>
+        <input type="checkbox" name="melon" id="melon">
+        <label for="melon">melon</label>
+        <input type="checkbox" name="orange" id="orange" checked>
+        <label for="orange">orange</label> <br>
+
+        <label for="etc" size="40">other</label>
+        <input type="text" name="etc" id="etc">
+      </div>
+
+
+      <div><br>
+        <label for="">Gender</label>
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="">Unknown</label>
+          <input type="radio" name="gender" id="unknown" value="unknown">
+        </div>
+      </div>
+      <div>
+
+      </div><br>
+      <label for="menu">Dinner dishes</label>
+      <select name="menu" id="menu">
+        <option value="Kimchi">Kimchi</option>
+        <option value="Noodle">Noodle</option>
+        <option value="Stew">Stew</option>
+        <option value="Sushi" selected>Sushi</option>
+      </select>
+
+      <div><br>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file">
+      </div>
+
+      <div><br>
+        <label for="color">Select your color </label>
+        <input type="color" name="color" id="color">
+      </div>
+
+      <div> <br>
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search">
+      </div>
+
+      <div> <br>
+        <label for="range">RANGE</label>
+        <input type="range" name=" range" id="range" min="0" max="100" value="50" step="2">
+      </div>
+
+      <div> <br>
+        <label for="time">Submit time</label>
+        <input type="time" name=" time" id="time">
+      </div>
+    </fieldset>
+
+    <br>
+    <button type="submit">로그인</button>
+    <button type="reset">취소</button>
+
+    <button>Button1</button>
+    <input type="button" value="버튼2">
+
+
+  </form>
+
+
+
+
+</body>
+
+</html>
